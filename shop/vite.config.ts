@@ -15,7 +15,8 @@ export default defineConfig({
       src: "/src",
       components: '/src/components',
       icons: '/src/assets/icons',
-      images: '/src/assets/images'
+      images: '/src/assets/images',
+      utils: '/src/utils'
     }
   }
 })

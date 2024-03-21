@@ -5,10 +5,14 @@ import { Outlet } from "react-router-dom";
 
 export const Layout: FC =() => {
     return(
-        <>
-            <Header />
-                <Outlet />
+        <div className='wrapper'>
+            <div className = 'content'>
+                <Header />
+                <main>
+                    <Outlet />
+                </main>
+            </div>
             <Footer />
-        </>
+        </div>
     )
 }

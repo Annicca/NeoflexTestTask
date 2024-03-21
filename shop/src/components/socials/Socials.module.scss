@@ -1,0 +1,11 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    a svg, a path{
+        fill: currentColor;
+        stroke: currentColor;
+        transition: all 0.3s ease-in-out;
+    }
+}
