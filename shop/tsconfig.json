@@ -18,7 +18,18 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "types": ["vite-plugin-svgr/client"],
+
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "components": ["src/components/*"],
+      "icons": ["src/assets/icons/"],
+      "images": ["src/assets/images/"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

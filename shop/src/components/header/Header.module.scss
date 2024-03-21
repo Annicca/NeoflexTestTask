@@ -1,0 +1,26 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #101010;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 9%;
+    margin-right: 5px;
+
+    @media(max-width: 320px) {
+        width: 25%;
+    }
+}

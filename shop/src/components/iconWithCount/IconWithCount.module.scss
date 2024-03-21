@@ -1,0 +1,19 @@
+.icon {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    width: 17px;
+    height: 18px;
+    top: -5px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFA542;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
