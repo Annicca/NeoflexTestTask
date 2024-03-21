@@ -1,0 +1,13 @@
+.language, .language form {
+    display: flex;
+    gap: 17px;
+
+    input[type=radio] {
+        display: none;
+    }
+
+    input[type=radio]:checked + label, label:hover {
+        color: #FFA542;
+        transition: color 0.3s ease-in-out;
+    }
+}
