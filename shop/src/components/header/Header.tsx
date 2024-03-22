@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import style from './Header.module.scss'
 
 export const Header: FC = () => {
-    return(
+    return (
         <header className={classNames(style.header, 'container')}>
             <Logo />
             <div className={style.list}>

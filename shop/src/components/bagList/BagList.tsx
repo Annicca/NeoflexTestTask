@@ -4,6 +4,7 @@ import { BagItem } from "../bagItem/BagItem";
 import { THeadPhone } from "src/type/THeadPhone";
 
 import style from './BagList.module.scss'
+import { AsideBag } from "../asideBag/AsideBag";
 
 export const BagList:FC = () => {
 
@@ -22,13 +23,7 @@ export const BagList:FC = () => {
             <h1>Корзина</h1>
             <section className={style.innerContainer}>
                 <List items={bag} className={style.list} renderItem={(item) => <BagItem key = {item.id} item={item} />} />
-                <aside className={style.aside}>
-                    <div className={style.asideContainer}>
-                        <div>ИТОГО</div>
-                        <div>стоимость</div>
-                    </div>
-                    <button className={style.button}>Перейти к оформлению</button>
-                </aside>
+                <AsideBag cost={0} />
             </section>
         </div>
     )
