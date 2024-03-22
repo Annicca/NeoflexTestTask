@@ -4,13 +4,9 @@ import { Link } from "react-router-dom";
 import { Language } from "../language/Language";
 import { Logo } from "../logo/Logo";
 import { footerList } from "src/utils/const";
-
-import style from './Footer.module.scss'
 import { Socials } from "../socials/Socials";
 
-
-
-
+import style from './Footer.module.scss'
 
 export const Footer: FC = () => {
     return(

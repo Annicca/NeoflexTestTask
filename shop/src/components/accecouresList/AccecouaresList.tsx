@@ -5,7 +5,6 @@ import { accecouares } from "src/utils/const"
 
 import style from './AccecouaresList.module.scss'
 
-
 export const AccecouaresList:FC =() => {
     
     if(accecouares.length !== 0) return(
@@ -14,10 +13,9 @@ export const AccecouaresList:FC =() => {
             items={accecouares} 
             className={style.accecouares}
             renderItem={(accecouareItem) =>
-                <section>
+                <section key={accecouareItem.title} >
                     <h1>{accecouareItem.title}</h1>
                     <List 
-                    key={accecouareItem.title} 
                     items={accecouareItem.items} 
                     className={style.list} 
                     renderItem={(headPhone) => <HeadPhone key={headPhone.id} headPhone={headPhone} />} />

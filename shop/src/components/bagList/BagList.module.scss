@@ -1,0 +1,25 @@
+.bag {
+    margin-top: 30px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+    margin-bottom: 20px;
+    row-gap: 20px;
+}
+
+.innerContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 20px;
+
+    @media(max-width: 1024px) {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
