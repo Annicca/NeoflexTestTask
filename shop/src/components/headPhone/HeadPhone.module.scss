@@ -19,13 +19,6 @@
     }
 }
 
-.imgContainer {
-    height: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .title {
     color: #1C1C27;
 }
@@ -46,5 +39,10 @@
     font-size: 17px;
     font-weight: 600;
     line-height: 21px;
+
+    &:hover {
+        color: #FFA542;
+        transition: color 0.3s ease-in-out;
+    }
 }
 

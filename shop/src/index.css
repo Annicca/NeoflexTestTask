@@ -18,6 +18,12 @@ a {
 a:hover {
   color: #FFA542;
   transition: color 0.3s ease-in-out;
+
+  svg,  path {
+    fill: #FFA542;
+    stroke: #FFA542;
+    transition: all 0.3s ease-out;
+  }
 }
 
 body {
@@ -35,6 +41,11 @@ body {
   }
 }
 
+h1 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -45,4 +56,10 @@ body {
   flex: 1 0 auto;
 }
 
+button {
+  font-family: Montserrat, sans-serif;
+  line-height: 21px;
+  font-weight: 600;
+  font-size: 17px;
+}
 
