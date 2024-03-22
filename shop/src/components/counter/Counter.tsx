@@ -25,7 +25,6 @@ export const Counter:FC<CounterProps> = ({count, id}) => {
             type: BagActionsTypes.UPDATE_COUNT_ITEM, 
             payload: {id: id, count: count-1}
         })
-        // updateItemBagCount(id, count-1)
     }
 
     return(
