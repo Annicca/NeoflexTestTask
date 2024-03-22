@@ -1,11 +1,11 @@
 import { FC } from "react";
 import style from './AsideBag.module.scss'
+import { useBagContext } from "src/context/context";
 
-interface AsideBagProps{
-    cost: number
-}
+export const AsideBag:FC = () => {
 
-export const AsideBag:FC<AsideBagProps> = ({cost}) => {
+    const {cost} = useBagContext()
+
     return(
         <aside className={style.aside}>
             <div className={style.asideContainer}>
