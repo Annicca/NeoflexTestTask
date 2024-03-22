@@ -21,13 +21,18 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  width: 77%;
+  max-width: 1110px;
+  margin: 0 auto;
   background-color: #EAEAEA;
   font-family: Montserrat, sans-serif;
   line-height: 21px;
   font-weight: 600;
   font-size: 17px;
-  
+
+  @media(max-width: 320px) {
+    width: 90%;
+  }
 }
 
 .wrapper {
@@ -38,16 +43,6 @@ body {
 
 .content {
   flex: 1 0 auto;
-}
-
-.container {
-  width: 77%;
-  margin: 0 auto;
-
-  @media(max-width: 320px) {
-    max-width: 90%;
-  }
-        
 }
 
 

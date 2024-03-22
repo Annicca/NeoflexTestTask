@@ -8,9 +8,7 @@ export const Layout: FC =() => {
         <div className='wrapper'>
             <div className = 'content'>
                 <Header />
-                <main>
-                    <Outlet />
-                </main>
+                <Outlet />
             </div>
             <Footer />
         </div>
